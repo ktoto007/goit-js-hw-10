@@ -39,7 +39,7 @@ function responseToRequest() {
         }
       })
       .catch(err => {
-        Notify.failure(err);
+        Notify.failure('Oops, there is no country with that name');
       });
   }
   refs.countryInfo.innerHTML = '';
