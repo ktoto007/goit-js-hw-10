@@ -61,7 +61,7 @@ function countryMapDrawing(country) {
 
 function DrawingListOfCountries(country) {
   const markup = [];
-  for (i = 0; i < country.length; i += 1) {
+  for (let i = 0; i < country.length; i += 1) {
     markup.push(`
     <li>
       <span class='flagWithName'><img src='${country[i].flags.svg}' width='50px' heigth='50px'alt='${country[i].flags.alt}' />
